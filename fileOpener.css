@@ -1,0 +1,23 @@
+.file-header > .open-in-ide {
+    visibility: visible;
+    order: 1;
+}
+
+.open-in-ide {
+    visibility: hidden;
+}
+
+.file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 0 16px;
+}
+
+.file-header > span {
+    margin-left: 0 !important;
+}
+
+.outdated-lozenge{
+    order: 2;
+}
