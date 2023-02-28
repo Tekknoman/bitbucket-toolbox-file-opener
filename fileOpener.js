@@ -29,5 +29,10 @@ const comments = getComments();
 for (let i = 0; i < comments.length; i++) {
   const comment = comments[i];
   const info = getInfo(comment);
+  // const button = document.createElement("button");
+  // button.className = "aui-button aui-button-primary open-in-ide";
+  // button.innerHTML = "Open in IDE";
+  // button.onclick = () => openFile(info.repo, info.path, info.line);
   comment.getElementsByClassName("atlaskit-icon")[0].addEventListener("click", () => openFile(info.repo, info.path, info.line));
+  // comment.getElementsByClassName("file-header")[0].appendChild(button);
 }
